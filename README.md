@@ -1,5 +1,5 @@
 # ProgrammingAssignment2
-makeCacheMatrix <- function(b = matrix()) {   #Define a function makeCacheMatrix 
+makeCacheMatrix <- function(b = matrix()) {   
   m<-NULL
   set<-function(y){
   b<<-y
@@ -13,7 +13,7 @@ list(set=set, get=get,
    getmatrix=getmatrix)
 }
 
-cacheSolve <- function(b=matrix(), ...) {  #Define a function cacheSolve 
+cacheSolve <- function(b=matrix(), ...) {  
     m<-b$getmatrix()
     if(!is.null(m)){
       message("getting cached data")
